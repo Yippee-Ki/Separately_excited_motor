@@ -3,9 +3,50 @@
   <head>
     <meta charset="utf-8"/>
     <title>DC motor of independent excitation</title>
-    <link rel="stylesheet" href="#"/>
+    <link rel="stylesheet" href="knob_style.css"/>
+    <link rel="stylesheet" href="toggle_style.css"/>
   </head>
   <body>
-    <!-- here's gonna be hot -->
+    <!-- the toggle -->    
+    <span class="switch">
+      <span class="switch-border1">
+        <span class="switch-border2">
+          <input id="switch1" type="checkbox" checked />
+          <label for="switch1"></label>
+          <span class="switch-top"></span>
+          <span class="switch-shadow"></span>
+          <span class="switch-handle"></span>
+          <span class="switch-handle-left"></span>
+          <span class="switch-handle-right"></span>
+          <span class="switch-handle-top"></span>
+          <span class="switch-handle-bottom"></span>
+          <span class="switch-handle-base"></span>
+          <span class="switch-led switch-led-green">
+            <span class="switch-led-border">
+              <span class="switch-led-light">
+                <span class="switch-led-glow"></span>
+              </span>
+            </span>
+          </span>
+          <span class="switch-led switch-led-red">
+            <span class="switch-led-border">
+              <span class="switch-led-light">
+                <span class="switch-led-glow"></span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+
+    <!-- the knob -->
+    <section id="main">
+      <div id="control">
+        <span class="knob"></span>
+      </div>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="transform.js"></script>
+    <script src="knob.js"></script>
   </body>
 </html>
