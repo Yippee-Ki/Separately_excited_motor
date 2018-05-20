@@ -1,20 +1,13 @@
-body {
-    background: #fff;
-    margin: 0px;    /* This will be replaced with 0 ( 0px; )*/
-    padding: 0;
-}
 .knob {
+	margin: 0px 170px;
 	width:83px;
 	height:83px;
 	position:relative;
-  position: absolute;
-	top: 8.5em;
-	left: 0.8em;
 	background-color: #555;
 	background-image: linear-gradient(to right, #5F5F5F, #878787);
 	border-radius: 2.5em;
 }
-.knob .top{
+.knob .top {
 	position:absolute;
 	top:0;
 	left:0;
@@ -25,7 +18,7 @@ body {
 	cursor:default !important;
 }
 
-.knob .base{
+.knob .base {
 	width:83px;
 	height:83px;
 	border-radius:50%;
@@ -36,7 +29,7 @@ body {
 	z-index:1;
 }
 
-.knob .top:after{
+.knob .top:after {
 	content:'';
 	width:10px;
 	height:10px;

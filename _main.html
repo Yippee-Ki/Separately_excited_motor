@@ -3,50 +3,98 @@
   <head>
     <meta charset="utf-8"/>
     <title>DC motor of independent excitation</title>
+    <link rel="stylesheet" href="_main.css"/>
     <link rel="stylesheet" href="knob.css"/>
     <link rel="stylesheet" href="toggle.css"/>
     <link rel="stylesheet" href="button.css"/>
   </head>
   <body>
-    <!-- the toggle -->    
-    <span class="switch">
-      <span class="switch-border1">
-        <span class="switch-border2">
-          <input id="switch1" type="checkbox" checked />
-          <label for="switch1"></label>
-          <span class="switch-top"></span>
-          <span class="switch-shadow"></span>
-          <span class="switch-handle"></span>
-          <span class="switch-handle-left"></span>
-          <span class="switch-handle-right"></span>
-          <span class="switch-handle-top"></span>
-          <span class="switch-handle-bottom"></span>
-          <span class="switch-handle-base"></span>
-          <span class="switch-led switch-led-green">
-            <span class="switch-led-border">
-              <span class="switch-led-light">
-                <span class="switch-led-glow"></span>
+    <div class="top panel">
+      <!-- the voltmeter -->
+      <span class="meter top-element"><img src="voltmeter.svg"></span>
+      <!-- the measuring screen -->
+      <span class="top-element">[measuring screen]</span>
+      <!-- the amperemeter -->
+      <span class="meter top-element"><img src="amperemeter.svg"></span>
+      <!-- the measuring screens -->
+      <span class="top-element">[measuring screens]</span>
+    </div>
+
+    <!-- the knobs -->
+    <div class="knobs panel">
+      <span class="control"><span class="knob"></span></span>
+    </div>
+
+    <div class="toggles panel">
+      <!-- the toggle -->
+      <span class="switch">
+        <span class="switch-border1">
+          <span class="switch-border2">
+            <input id="switch1" type="checkbox" checked/>
+            <label for="switch1"></label>
+            <span class="switch-top"></span>
+            <span class="switch-shadow"></span>
+            <span class="switch-handle"></span>
+            <span class="switch-handle-left"></span>
+            <span class="switch-handle-right"></span>
+            <span class="switch-handle-top"></span>
+            <span class="switch-handle-bottom"></span>
+            <span class="switch-handle-base"></span>
+            <span class="switch-led switch-led-green">
+              <span class="switch-led-border">
+                <span class="switch-led-light">
+                  <span class="switch-led-glow"></span>
+                </span>
               </span>
             </span>
-          </span>
-          <span class="switch-led switch-led-red">
-            <span class="switch-led-border">
-              <span class="switch-led-light">
-                <span class="switch-led-glow"></span>
+            <span class="switch-led switch-led-red">
+              <span class="switch-led-border">
+                <span class="switch-led-light">
+                  <span class="switch-led-glow"></span>
+                </span>
               </span>
             </span>
           </span>
         </span>
       </span>
-    </span>
-    <!-- the buton-->
-    <button name="" type="button" class="button">ON</button>
-    <!-- the knob -->
-    <section id="main">
-      <div id="control">
-        <span class="knob"></span>
-      </div>
-    </section>
+      <!-- the toggle 2 -->
+      <span class="switch">
+        <span class="switch-border1">
+          <span class="switch-border2">
+            <input id="switch2" type="checkbox" checked/>
+            <label for="switch2"></label>
+            <span class="switch-top"></span>
+            <span class="switch-shadow"></span>
+            <span class="switch-handle"></span>
+            <span class="switch-handle-left"></span>
+            <span class="switch-handle-right"></span>
+            <span class="switch-handle-top"></span>
+            <span class="switch-handle-bottom"></span>
+            <span class="switch-handle-base"></span>
+            <span class="switch-led switch-led-green">
+              <span class="switch-led-border">
+                <span class="switch-led-light">
+                  <span class="switch-led-glow"></span>
+                </span>
+              </span>
+            </span>
+            <span class="switch-led switch-led-red">
+              <span class="switch-led-border">
+                <span class="switch-led-light">
+                  <span class="switch-led-glow"></span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+
+    <!-- the power button -->
+    <button type="button" class="button"><img src="button.svg"></button>
+    <!-- the scheme -->
+    <span class="scheme"><img src="scheme.svg"></span>
+    
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="transform.js"></script>
     <script src="knob.js"></script>
