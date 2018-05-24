@@ -1,5 +1,5 @@
 .knob {
-	margin: 0px 170px;
+	margin: 0px 150px;
 	width:83px;
 	height:83px;
 	position:relative;
@@ -48,7 +48,7 @@
   -webkit-user-select: none;
   user-select: none;
 }
-
+/*
 .center { text-align: center; }
 
 .done {
@@ -77,8 +77,8 @@
     background: #1e5799;
     background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
     font: normal 8pt mono, "Courier New", Courier;
-    margin: 0em 5px;    /* This will be replaced with 0 ( 0em; )*/
-    padding: 5px;
+    margin: 0em 5px;  */  /* This will be replaced with 0 ( 0em; )*/
+    /* padding: 5px;
 }
 
 .someclass {
@@ -87,4 +87,4 @@
     border: #000 solid 1px;
     border-radius: 5px;
     box-sizing: content-box;
-}
+}  */

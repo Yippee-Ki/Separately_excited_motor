@@ -37,7 +37,7 @@
             if(options.value > 0 && options.value <= 359){
                 rotation = currentDeg = options.value;
                 knobTop.css('transform','rotate('+(currentDeg)+'deg)');
-                options.turn(currentDeg/359);
+                options.turn(currentDeg/179); // here was 359
             }
 
             knob.on('mousedown', function(e){
@@ -76,10 +76,10 @@
                     // Making sure the current rotation
                     // stays between 0 and 359
                     if(tmp < 0){
-                        tmp = 360 + tmp;
+                        tmp = 180 + tmp; // here was 360
                     }
-                    else if(tmp > 359){
-                        tmp = tmp % 360;
+                    else if(tmp > 179){ // here was 359
+                        tmp = tmp % 180; // here was 360
                     }
 
                     // Snapping in the off position:
@@ -89,7 +89,7 @@
 
                     // This would suggest we are at an end position;
                     // we need to block further rotation.
-                    if(Math.abs(tmp - lastDeg) > 180){
+                    if(Math.abs(tmp - lastDeg) > 90){ // here was 180
                         return false;
                     }
 
@@ -97,7 +97,7 @@
                     lastDeg = tmp;
 
                     knobTop.css('transform','rotate('+(currentDeg)+'deg)');
-                    options.turn(currentDeg/359);
+                    options.turn(currentDeg/179); // here was 359
                 });
 
                 doc.on('mouseup.rem',function(){
@@ -110,7 +110,6 @@
                     // Marking the starting degree as invalid
                     startDeg = -1;
                 });
-
             });
         });
     };
@@ -126,7 +125,7 @@ $(function(){
     var colorBars = bars.find('.colorBar');
     var numBars = 0, lastNum = -1;
 
-    $('.control').knobKnob({
+    $('#control').knobKnob({
         snap : 10,
         value: 154,
         turn : function(ratio){

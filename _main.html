@@ -7,22 +7,55 @@
     <link rel="stylesheet" href="knob.css"/>
     <link rel="stylesheet" href="toggle.css"/>
     <link rel="stylesheet" href="button.css"/>
+    <link rel="stylesheet" href="display.css"/>
   </head>
   <body>
     <div class="top panel">
       <!-- the voltmeter -->
-      <span class="meter top-element"><img src="voltmeter.svg"></span>
+      <span class="meter">
+        <img src="voltmeter.svg">
+        <div id="spear">
+          <canvas height="270" width="270" id="myCanvas"></canvas>
+        </div>
+      </span>
       <!-- the measuring screen -->
-      <span class="top-element">[measuring screen]</span>
+      <span class="armature">
+        <div class="out">
+          <div class="in">
+            <div class="clock">
+              <span class="hour"></span>
+            </div>
+          </div>
+        </div>
+      </span>
       <!-- the amperemeter -->
-      <span class="meter top-element"><img src="amperemeter.svg"></span>
+      <span class="meter">
+        <img src="amperemeter.svg">
+      </span>
       <!-- the measuring screens -->
-      <span class="top-element">[measuring screens]</span>
+      <span class="angular">
+        <div class="out">
+          <div class="in">
+            <div class="clock">
+              <span class="hour"></span>
+            </div>
+          </div>
+        </div>
+      </span>
+      <!-- <div class="resistance">
+        <div class="out">
+          <div class="in">
+            <div class="clock">
+              <span class="hour"></span>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
 
     <!-- the knobs -->
     <div class="knobs panel">
-      <span class="control"><span class="knob"></span></span>
+      <span id="control"></span>
     </div>
 
     <div class="toggles panel">
@@ -88,15 +121,47 @@
           </span>
         </span>
       </span>
+      <!-- the toggle 3 -->
+      <span class="switch">
+        <span class="switch-border1">
+          <span class="switch-border2">
+            <input id="switch3" type="checkbox" checked/>
+            <label for="switch3"></label>
+            <span class="switch-top"></span>
+            <span class="switch-shadow"></span>
+            <span class="switch-handle"></span>
+            <span class="switch-handle-left"></span>
+            <span class="switch-handle-right"></span>
+            <span class="switch-handle-top"></span>
+            <span class="switch-handle-bottom"></span>
+            <span class="switch-handle-base"></span>
+            <span class="switch-led switch-led-green">
+              <span class="switch-led-border">
+                <span class="switch-led-light">
+                  <span class="switch-led-glow"></span>
+                </span>
+              </span>
+            </span>
+            <span class="switch-led switch-led-red">
+              <span class="switch-led-border">
+                <span class="switch-led-light">
+                  <span class="switch-led-glow"></span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <!-- the scheme -->
+      <span class="scheme"><img src="scheme.svg"></span>
     </div>
 
     <!-- the power button -->
     <button type="button" class="button"><img src="button.svg"></button>
-    <!-- the scheme -->
-    <span class="scheme"><img src="scheme.svg"></span>
-    
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="transform.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <!-- <script src="transform.js"></script> -->
     <script src="knob.js"></script>
+    <script src="spear.js"></script>
   </body>
 </html>
