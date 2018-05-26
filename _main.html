@@ -12,12 +12,8 @@
   <body>
     <div class="top panel">
       <!-- the voltmeter -->
-      <div class="meter">
-        <img src="voltmeter.svg">
-        <div id="spear">
-          <canvas height="270" width="270" id="myCanvas"></canvas>
-        </div>
-      </div>
+      <div class="meter"><img src="voltmeter.svg"></div>
+      <div id="v-spear"><img src="spear.svg"></div>
       <!-- the measuring screen -->
       <div id="armature">
         <div class="out">
@@ -29,9 +25,8 @@
         </div>
       </div>
       <!-- the amperemeter -->
-      <div class="meter">
-        <img src="amperemeter.svg">
-      </div>
+      <div class="meter"><img src="amperemeter.svg"></div>
+      <div id="a-spear"><img src="spear.svg"></div>
       <!-- the measuring screens -->
       <div id="right-displays">
         <div id="angular">
@@ -164,8 +159,7 @@
     <button type="button" class="button"><img src="button.svg"></button>
 
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <!-- <script src="transform.js"></script> -->
     <script src="knob.js"></script>
-    <script src="spear.js"></script>
+    <!-- <script src="spear.js"></script> -->
   </body>
 </html>

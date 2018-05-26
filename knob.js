@@ -37,6 +37,8 @@
             if(options.value > 0 && options.value <= 359){
                 rotation = currentDeg = options.value;
                 knobTop.css('transform','rotate('+(currentDeg)+'deg)');
+                $('#v-spear').css('transform','rotate('+(currentDeg-90)+'deg)');
+
                 options.turn(currentDeg/179); // here was 359
             }
 
@@ -74,7 +76,7 @@
                     tmp = Math.floor((deg-startDeg) + rotation);
 
                     // Making sure the current rotation
-                    // stays between 0 and 359
+                    // stays between 0 and 179
                     if(tmp < 0){
                         tmp = 180 + tmp; // here was 360
                     }
@@ -97,6 +99,8 @@
                     lastDeg = tmp;
 
                     knobTop.css('transform','rotate('+(currentDeg)+'deg)');
+                    $('#v-spear').css('transform','rotate('+(currentDeg-90)+'deg)');
+
                     options.turn(currentDeg/179); // here was 359
                 });
 
@@ -127,7 +131,7 @@ $(function control(){
 
     $('#control').knobKnob({
         snap : 10,
-        value: 154,
+        value: 65,
         turn : function(ratio){
             numBars = Math.round(colorBars.length*ratio);
 
