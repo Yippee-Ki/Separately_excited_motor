@@ -116,9 +116,7 @@
 
 })(jQuery);
 
-
-
-$(function control(control){
+$(function control(){
 
     var rad2deg = 180/Math.PI;
     var deg = 0;
@@ -127,7 +125,7 @@ $(function control(control){
     var colorBars = bars.find('.colorBar');
     var numBars = 0, lastNum = -1;
 
-    $(control).knobKnob({
+    $('#control').knobKnob({
         snap : 10,
         value: 154,
         turn : function(ratio){
@@ -145,4 +143,4 @@ $(function control(control){
         }
     });
 });
-$('#control').control('#control');
+// $('#control').control('#control');

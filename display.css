@@ -1,6 +1,7 @@
-@CHARSET "UTF-8";
-.armature div { display: inline-block; position: relative;} /* в мэйн.цсс про это есть */
-.angular div { display: inline-block; position: relative;}
+@CHARSET "UTF-8"; /* TODO:  google it, ntk if needed*/
+#armature div { display: inline-block; position: relative;}
+#right-displays div { display: inline-block; position: relative;}
+#angular, #resistance {  padding: 30px 0px;}
 .out {
   width:205px;
   height:100px;

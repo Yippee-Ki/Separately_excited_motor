@@ -12,14 +12,14 @@
   <body>
     <div class="top panel">
       <!-- the voltmeter -->
-      <span class="meter">
+      <div class="meter">
         <img src="voltmeter.svg">
         <div id="spear">
           <canvas height="270" width="270" id="myCanvas"></canvas>
         </div>
-      </span>
+      </div>
       <!-- the measuring screen -->
-      <span class="armature">
+      <div id="armature">
         <div class="out">
           <div class="in">
             <div class="clock">
@@ -27,36 +27,39 @@
             </div>
           </div>
         </div>
-      </span>
+      </div>
       <!-- the amperemeter -->
-      <span class="meter">
+      <div class="meter">
         <img src="amperemeter.svg">
-      </span>
+      </div>
       <!-- the measuring screens -->
-      <span class="angular">
-        <div class="out">
-          <div class="in">
-            <div class="clock">
-              <span class="hour"></span>
+      <div id="right-displays">
+        <div id="angular">
+          <div class="out">
+            <div class="in">
+              <div class="clock">
+                <span class="hour"></span>
+              </div>
             </div>
           </div>
         </div>
-      </span>
-      <!-- <div class="resistance">
-        <div class="out">
-          <div class="in">
-            <div class="clock">
-              <span class="hour"></span>
+        <br>
+        <div id="resistance">
+          <div class="out">
+            <div class="in">
+              <div class="clock">
+                <span class="hour"></span>
+              </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!-- the knobs -->
     <div class="knobs panel">
       <span id="control"></span>
-      <span id="control2"></span>
+      <!-- <span id="control2"></span> -->
     </div>
 
     <div class="toggles panel">
