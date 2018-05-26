@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
-.armature div { display: inline-block; position: relative;}
+.armature div { display: inline-block; position: relative;} /* в мэйн.цсс про это есть */
 .angular div { display: inline-block; position: relative;}
 .out {
   width:205px;

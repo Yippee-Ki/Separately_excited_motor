@@ -116,7 +116,9 @@
 
 })(jQuery);
 
-$(function(){
+
+
+$(function control(control){
 
     var rad2deg = 180/Math.PI;
     var deg = 0;
@@ -125,7 +127,7 @@ $(function(){
     var colorBars = bars.find('.colorBar');
     var numBars = 0, lastNum = -1;
 
-    $('#control').knobKnob({
+    $(control).knobKnob({
         snap : 10,
         value: 154,
         turn : function(ratio){
@@ -142,5 +144,5 @@ $(function(){
             colorBars.removeClass('active').slice(0, numBars).addClass('active');
         }
     });
-
 });
+$('#control').control('#control');

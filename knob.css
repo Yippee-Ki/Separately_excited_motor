@@ -1,11 +1,11 @@
 .knob {
-	margin: 0px 150px;
+	position:relative; /* позиция зависит от расположения других элементов */
+	margin: 0px 150px; /* отступ сверху и сниху - 0, а по бокам 150 */
 	width:83px;
 	height:83px;
-	position:relative;
 	background-color: #555;
 	background-image: linear-gradient(to right, #5F5F5F, #878787);
-	border-radius: 2.5em;
+	border-radius: 2.5em; /* скругление */ 
 }
 .knob .top {
 	position:absolute;

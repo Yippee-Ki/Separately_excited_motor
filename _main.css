@@ -10,8 +10,8 @@ body {
 .toggles { margin-left: 50px;}
 .scheme img { width: 330px;}
 #spear {
-  position:absolute;
-  display: inline-block;
-  left: 80px;
+  position: absolute; /* позиция элемента не зависит от других элементов */
+  display: inline-block; /* элемент становится строчно-блочным, то есть не переносит строку */
+  left: 80px; /* если бы не было свойства position, надо было бы писать margin-left */
   top: 150px;
 }
