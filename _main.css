@@ -11,13 +11,12 @@ body {
 .toggles { margin-left: 50px;}
 .scheme img { width: 330px;}
 #v-spear, #a-spear {
-  transform: rotate(-25deg);
-  transform-origin: center 194.2px;
-  position: absolute; /* позиция элемента не зависит от других элементов */
-  display: inline-block; /* элемент становится строчно-блочным, то есть не переносит строку */
-  top: 125px;
+  transform-origin: 7px 186px;
+  position: relative;
+  display: inline-block;
+  bottom: 35px;
+  left: -185px;
+  width: 0;
 }
-#v-spear { left: 208.5px;}
-#v-spear img { height: 195px;}
-#a-spear { left: 812px;}
-#a-spear img { height: 195px;}
+#v-spear img { height: 195px; border: 0;}
+#a-spear img { height: 195px; border: 0;}

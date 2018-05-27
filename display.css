@@ -1,7 +1,7 @@
 @CHARSET "UTF-8"; /* TODO:  google it, ntk if needed*/
 #armature div { display: inline-block; position: relative;}
 #right-displays div { display: inline-block; position: relative;}
-#angular, #resistance {  padding: 30px 0px;}
+#angular, #torque {  padding: 10px 0px 0px;}
 .out {
   width:205px;
   height:100px;
@@ -33,7 +33,7 @@
 .clock {
   left:8px;
   top:8px;
-  width:400px;
+  width:190px;
   height:100px;
 }
 .hour {
