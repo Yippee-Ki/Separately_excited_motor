@@ -61,5 +61,5 @@
 <rect x="165" y="55.3" class="st4" width="33" height="23.3"/>
 <text transform="matrix(1 0 0 1 165 74.5031)" class="st5 st6">Rд</text>
 <rect x="165" y="139.3" class="st4" width="40" height="31"/>
-<text transform="matrix(1 0 0 1 165.0003 158.5033)" class="st5 st6">Rр</text>
+<!--<text transform="matrix(1 0 0 1 165.0003 158.5033)" class="st5 st6">Rр</text>-->
 </svg>
