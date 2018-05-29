@@ -65,10 +65,17 @@
     <!-- the knobs -->
     <div class="knobs panel">
       <span id="control"></span>
-      <!-- <span id="control2"></span> -->
+      <span id="control2"></span>
+      <div id="scale">
+        <img src="scale.svg">
+      </div>
+      <span id="control3"></span>
+      <span id="control4"></span>
     </div>
 
-    <div class="toggles panel">
+    <div class="bottom panel">
+      <!-- the power button -->
+      <button type="button" class="button"><img src="button.svg"></button>
       <!-- the toggle -->
       <span class="switch">
         <span class="switch-border1">
@@ -100,77 +107,12 @@
           </span>
         </span>
       </span>
-      <!-- the toggle 2 -->
-      <span class="switch">
-        <span class="switch-border1">
-          <span class="switch-border2">
-            <input id="switch2" type="checkbox" checked/>
-            <label for="switch2"></label>
-            <span class="switch-top"></span>
-            <span class="switch-shadow"></span>
-            <span class="switch-handle"></span>
-            <span class="switch-handle-left"></span>
-            <span class="switch-handle-right"></span>
-            <span class="switch-handle-top"></span>
-            <span class="switch-handle-bottom"></span>
-            <span class="switch-handle-base"></span>
-            <span class="switch-led switch-led-green">
-              <span class="switch-led-border">
-                <span class="switch-led-light">
-                  <span class="switch-led-glow"></span>
-                </span>
-              </span>
-            </span>
-            <span class="switch-led switch-led-red">
-              <span class="switch-led-border">
-                <span class="switch-led-light">
-                  <span class="switch-led-glow"></span>
-                </span>
-              </span>
-            </span>
-          </span>
-        </span>
-      </span>
-      <!-- the toggle 3 -->
-      <span class="switch">
-        <span class="switch-border1">
-          <span class="switch-border2">
-            <input id="switch3" type="checkbox" checked/>
-            <label for="switch3"></label>
-            <span class="switch-top"></span>
-            <span class="switch-shadow"></span>
-            <span class="switch-handle"></span>
-            <span class="switch-handle-left"></span>
-            <span class="switch-handle-right"></span>
-            <span class="switch-handle-top"></span>
-            <span class="switch-handle-bottom"></span>
-            <span class="switch-handle-base"></span>
-            <span class="switch-led switch-led-green">
-              <span class="switch-led-border">
-                <span class="switch-led-light">
-                  <span class="switch-led-glow"></span>
-                </span>
-              </span>
-            </span>
-            <span class="switch-led switch-led-red">
-              <span class="switch-led-border">
-                <span class="switch-led-light">
-                  <span class="switch-led-glow"></span>
-                </span>
-              </span>
-            </span>
-          </span>
-        </span>
-      </span>
       <!-- the scheme -->
       <span class="scheme"><img src="scheme.svg"></span>
-    </div>
 
-    <!-- the power button -->
-    <button type="button" class="button"><img src="button.svg"></button>
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="knob.js"></script>
-    <!-- <script src="spear.js"></script> -->
   </body>
 </html>

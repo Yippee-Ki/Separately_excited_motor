@@ -3,20 +3,28 @@ body {
   padding: 0;
   margin: 0;
 }
-.top div { display: inline-block;}
 .panel { padding: 20px;}
+.panel div { display: inline-block;}
 .panel img { height: 270px;}
 .meter { padding: 20px;}
 .meter img { border: 20px solid #4B4B4B;}
-.toggles { margin-left: 50px;}
-.scheme img { width: 330px;}
+.knobs { padding: 0px 0px;}
+.scheme img { height: 330px;}
 #v-spear, #a-spear {
   transform-origin: 7px 186px;
   position: relative;
-  display: inline-block;
   bottom: 35px;
   left: -185px;
   width: 0;
+  height: 0;
 }
 #v-spear img { height: 195px; border: 0;}
 #a-spear img { height: 195px; border: 0;}
+#scale {
+  position: relative;
+  width: 0;
+  height: 0;
+  left: -183px;
+  top: -25px;
+}
+#scale img { height: 95px;}

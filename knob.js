@@ -8,7 +8,7 @@
 
 (function($){
 
-    $.fn.knobKnob = function(props){
+    $.fn.knobKnob = function(props, spear){
 
         var options = $.extend({
             snap: 0,
@@ -26,7 +26,7 @@
             var el = $(this);
             el.append(tpl);
 
-            var knob = $('.knob',el)
+            var knob = $('.knob',el),
                 knobTop = knob.find('.top'),
                 startDeg = -1,
                 currentDeg = 0,
@@ -37,7 +37,7 @@
             if(options.value > 0 && options.value <= 359){
                 rotation = currentDeg = options.value;
                 knobTop.css('transform','rotate('+(currentDeg)+'deg)');
-                $('#v-spear').css('transform','rotate('+(currentDeg-90)+'deg)');
+                $(spear).css('transform','rotate('+(currentDeg-90)+'deg)');
 
                 options.turn(currentDeg/179); // here was 359
             }
@@ -99,7 +99,7 @@
                     lastDeg = tmp;
 
                     knobTop.css('transform','rotate('+(currentDeg)+'deg)');
-                    $('#v-spear').css('transform','rotate('+(currentDeg-90)+'deg)');
+                    $(spear).css('transform','rotate('+(currentDeg-90)+'deg)');
 
                     options.turn(currentDeg/179); // here was 359
                 });
@@ -120,31 +120,26 @@
 
 })(jQuery);
 
-$(function control(){
-
-    var rad2deg = 180/Math.PI;
-    var deg = 0;
-    var bars = $('#bars');
-
-    var colorBars = bars.find('.colorBar');
-    var numBars = 0, lastNum = -1;
+$(function(){
 
     $('#control').knobKnob({
         snap : 10,
         value: 65,
-        turn : function(ratio){
-            numBars = Math.round(colorBars.length*ratio);
-
-            // Update the dom only when the number of active bars
-            // changes, instead of on every move
-
-            if(numBars == lastNum){
-                return false;
-            }
-            lastNum = numBars;
-
-            colorBars.removeClass('active').slice(0, numBars).addClass('active');
-        }
+        turn : function (ratio) {
+         var deg = ratio * 180;
+         $('v-spear').css('transform', 'rotate(' + deg + 'deg)')
+         }
+    });
+    $('#control2').knobKnob({
+        snap : 10,
+        value: 65,
+    });
+    $('#control3').knobKnob({
+        snap : 10,
+        value: 65,
+    });
+    $('#control4').knobKnob({
+        snap : 10,
+        value: 65,
     });
 });
-// $('#control').control('#control');

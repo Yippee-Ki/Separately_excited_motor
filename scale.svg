@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-<image overflow="visible" width="131" height="173" xlink:href="../FC92BF21.png"  transform="matrix(0.75 0 0 0.75 257 331)">
-</image>
-<text transform="matrix(1 0 0 1 280 337)" font-family="'MyriadPro-Regular'" font-size="12px">1</text>
-<text transform="matrix(1 0 0 1 328 366)" font-family="'MyriadPro-Regular'" font-size="12px">2</text>
-<text transform="matrix(1 0 0 1 328 427)" font-family="'MyriadPro-Regular'" font-size="12px">3</text>
-<text transform="matrix(1 0 0 1 280 460.75)" font-family="'MyriadPro-Regular'" font-size="12px">4</text>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg1" inkscape:version="0.40+cvs" sodipodi:docbase="/home/aliekens/personal/inkscape" sodipodi:docname="io.svg" sodipodi:version="0.32" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.6 183.1"
+	 style="enable-background:new 0 0 339.6 183.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:none;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:42px;}
+</style>
+<line class="st0" x1="36.7" y1="159.7" x2="65" y2="159.7"/>
+<line class="st0" x1="269.3" y1="159.7" x2="297.7" y2="159.7"/>
+<line class="st0" x1="102.2" y1="47.1" x2="116.3" y2="71.6"/>
+<line class="st0" x1="218" y1="71.6" x2="232.2" y2="47.1"/>
+<rect x="10.2" y="140.5" class="st1" width="32.3" height="38.3"/>
+<text transform="matrix(1 0 0 1 10.1665 170.3193)" class="st2 st3">1</text>
+<rect x="76.8" y="12" class="st1" width="32.3" height="38.3"/>
+<text transform="matrix(1 0 0 1 76.7885 41.7816)" class="st2 st3">2</text>
+<rect x="303" y="140.5" class="st1" width="32.3" height="38.3"/>
+<text transform="matrix(1 0 0 1 302.9663 170.3194)" class="st2 st3">4</text>
+<rect x="233" y="12" class="st1" width="32.3" height="38.3"/>
+<text transform="matrix(1 0 0 1 232.9996 41.7816)" class="st2 st3">3</text>
 </svg>

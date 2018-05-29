@@ -1,6 +1,7 @@
 .knob {
+	display: inline-block;
 	position:relative; /* позиция зависит от расположения других элементов */
-	margin: 0px 150px; /* отступ сверху и сниху - 0, а по бокам 150 */
+	margin: 0px 50px 0px 170px; 
 	width:83px;
 	height:83px;
 	background-color: #555;
