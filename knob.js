@@ -8,7 +8,7 @@
 
 (function($){
 
-    $.fn.knobKnob = function(props, spear){
+    $.fn.knobKnob = function(props){
 
         var options = $.extend({
             snap: 0,
@@ -37,7 +37,6 @@
             if(options.value > 0 && options.value <= 359){
                 rotation = currentDeg = options.value;
                 knobTop.css('transform','rotate('+(currentDeg)+'deg)');
-                $(spear).css('transform','rotate('+(currentDeg-90)+'deg)');
 
                 options.turn(currentDeg/179); // here was 359
             }
@@ -99,7 +98,6 @@
                     lastDeg = tmp;
 
                     knobTop.css('transform','rotate('+(currentDeg)+'deg)');
-                    $(spear).css('transform','rotate('+(currentDeg-90)+'deg)');
 
                     options.turn(currentDeg/179); // here was 359
                 });
@@ -119,27 +117,3 @@
     };
 
 })(jQuery);
-
-$(function(){
-
-    $('#control').knobKnob({
-        snap : 10,
-        value: 65,
-        turn : function (ratio) {
-         var deg = ratio * 180;
-         $('v-spear').css('transform', 'rotate(' + deg + 'deg)')
-         }
-    });
-    $('#control2').knobKnob({
-        snap : 10,
-        value: 65,
-    });
-    $('#control3').knobKnob({
-        snap : 10,
-        value: 65,
-    });
-    $('#control4').knobKnob({
-        snap : 10,
-        value: 65,
-    });
-});

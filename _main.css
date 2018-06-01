@@ -9,7 +9,7 @@ body {
 .meter { padding: 20px;}
 .meter img { border: 20px solid #4B4B4B;}
 .knobs { padding: 0px 0px;}
-.scheme img { height: 330px;}
+#scheme { height: 330px;}
 #v-spear, #a-spear {
   transform-origin: 7px 186px;
   position: relative;
@@ -27,4 +27,4 @@ body {
   left: -183px;
   top: -25px;
 }
-#scale img { height: 95px;}
+#scale object { height: 95px;}

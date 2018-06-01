@@ -20,12 +20,9 @@
       </div>
       <!-- the measuring screen -->
       <div id="armature">
-        <p> Ток якоря </p>
         <div class="out">
           <div class="in">
-            <div class="clock">
-              <span class="hour"></span>
-            </div>
+            <div class="clock"></div>
           </div>
         </div>
       </div>
@@ -41,21 +38,15 @@
         <div id="angular">
           <div class="out">
             <div class="in">
-              <div class="clock">
-                <span class="hour"></span>
-              </div>
+              <div class="clock"></div>
             </div>
           </div>
-          <p> Угловая скорость </p>
         </div>
         <br>
         <div id="torque">
-          <p> Момент двигателя </p>
           <div class="out">
             <div class="in">
-              <div class="clock">
-                <span class="hour"></span>
-              </div>
+              <div class="clock"></div>
             </div>
           </div>
         </div>
@@ -67,7 +58,7 @@
       <span id="control"></span>
       <span id="control2"></span>
       <div id="scale">
-        <img src="scale.svg">
+        <object data="scale.svg"></object>
       </div>
       <span id="control3"></span>
       <span id="control4"></span>
@@ -108,11 +99,13 @@
         </span>
       </span>
       <!-- the scheme -->
-      <span class="scheme"><img src="scheme.svg"></span>
+      <object id="scheme" data="scheme.svg"></object>
 
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="http://jsgadget.ru/js/jsdisplay-1.1.1.min.js"></script>
     <script src="knob.js"></script>
+    <script src="control.js"></script>
   </body>
 </html>
