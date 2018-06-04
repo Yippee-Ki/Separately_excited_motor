@@ -22,7 +22,7 @@
       <div id="armature">
         <div class="out">
           <div class="in">
-            <div class="clock"></div>
+            <div id="arm-display"></div>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
         <div id="angular">
           <div class="out">
             <div class="in">
-              <div class="clock"></div>
+              <div id="ang-display"></div>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
         <div id="torque">
           <div class="out">
             <div class="in">
-              <div class="clock"></div>
+              <div id="tor-display"></div>
             </div>
           </div>
         </div>
@@ -55,13 +55,13 @@
 
     <!-- the knobs -->
     <div class="knobs panel">
-      <span id="control"></span>
-      <span id="control2"></span>
+      <span id="v-control"></span>
+      <span id="res-control"></span>
       <div id="scale">
         <object data="scale.svg"></object>
       </div>
-      <span id="control3"></span>
-      <span id="control4"></span>
+      <span id="a-control"></span>
+      <span id="tor-control"></span>
     </div>
 
     <div class="bottom panel">
@@ -106,6 +106,6 @@
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="http://jsgadget.ru/js/jsdisplay-1.1.1.min.js"></script>
     <script src="knob.js"></script>
-    <script src="control.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

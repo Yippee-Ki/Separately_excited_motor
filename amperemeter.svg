@@ -67,11 +67,11 @@
 	</g>
 	<g>
 		<text transform="matrix(1 0 0 1 -375.2271 -446.4619)" class="st3 st4">0</text>
-		<text transform="matrix(1 0 0 1 -359.8408 -511.4669)" class="st3 st4">0.5</text>
-		<text transform="matrix(1 0 0 1 -298.9641 -527.6696)" class="st3 st4">1</text>
-		<text transform="matrix(1 0 0 1 -251.4261 -527.6696)" class="st3 st4">1.5</text>
-		<text transform="matrix(1 0 0 1 -190.5494 -511.4669)" class="st3 st4">2</text>
-		<text transform="matrix(1 0 0 1 -171.0624 -446.4619)" class="st3 st4">3</text>
+		<text transform="matrix(1 0 0 1 -352.6002 -513.3002)" class="st3 st4">1</text>
+		<text transform="matrix(1 0 0 1 -298.9644 -527.6698)" class="st3 st4">2</text>
+		<text transform="matrix(1 0 0 1 -242.4999 -527.67)" class="st3 st4">3</text>
+		<text transform="matrix(1 0 0 1 -190.2996 -513.3004)" class="st3 st4">4</text>
+		<text transform="matrix(1 0 0 1 -171.0624 -446.4619)" class="st3 st4">5</text>
 	</g>
 	<text transform="matrix(1 0 0 1 -278.6047 -436.5948)" class="st3 st5">A</text>
 	<path class="st2" d="M-266-334.7h-130.4v-226.8l0,0h260.8l0,0v226.8H-266z"/>
