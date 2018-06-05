@@ -19,25 +19,30 @@ $(function(){
 
 
     // реулятор для добавочного сопротивления
-    // $('.switch').on('click', function(){
-
-      // if ($('#switch1').prop('checked')) {
-
-       //  $('#res-control').knobKnob({
-       //     snap : 180,
-       //     value: 0,
-       //     });
-       // } else {
-         $('#res-control').knobKnob({
-           snap : 10,
-           value: 0,
-           turn :  function (ratio) {
-               resistance = (ratio * 3 + 1).toFixed(0);
-               counting();
-             }
-         });
-       // }
-    // });
+    var counter = 0, last_resistance = 0; // TODO: почему-то при первом включении ставит не то значение
+    $('#res-control').knobKnob({
+      snap : 10,
+      value: 0,
+      turn :  function (ratio) {
+          if ((counter % 2) != 0) {
+            resistance = (ratio * 3 + 1).toFixed(0);
+            counting();
+          }
+        }
+    });
+    $('.switch').on('click', function(){
+      if ($('#switch1').prop('checked')) {
+        if ((counter % 2) != 0) {
+          last_resistance = resistance;
+          resistance = 0;
+          counting();
+        } else {
+          resistance = last_resistance;
+          counting();
+        }
+        counter++;
+      }
+    });
 
 
     // реулятор для амперметра

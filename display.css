@@ -1,3 +1,8 @@
+/**
+ * @name       JSDisplay
+ * @url        http://jsgadget.ru/jsdisplay.html
+ */
+
 @CHARSET "UTF-8"; /* TODO:  google it, ntk if needed*/
 #armature div { position: relative; bottom: 220px;}
 #right-displays div { position: relative;}
