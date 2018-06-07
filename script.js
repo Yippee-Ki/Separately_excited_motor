@@ -19,7 +19,7 @@ $(function(){
 
 
     // реулятор для добавочного сопротивления
-    var counter = 0, last_resistance = 0; // TODO: почему-то при первом включении ставит не то значение
+    var counter = 0, last_resistance = 1; // TODO: почему-то при первом включении ставит не то значение
     $('#res-control').knobKnob({
       snap : 10,
       value: 0,
@@ -95,4 +95,15 @@ $(function(){
         shadow: {color: "gray"}},
         angular.toFixed(1));
     }
+
+    // power button
+    var counter2 = 0;
+    $('.button').on('click', function(){
+      if ((counter2 % 2) == 0) {
+        $('#off-on').css('display', 'none');
+      } else {
+        $('#off-on').css('display', 'inline');
+      }
+      counter2++;
+    });
 });
