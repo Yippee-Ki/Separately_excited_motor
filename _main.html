@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="display.css"/>
   </head>
   <body>
-    <div id="off-on"></div>    
+    <!-- <div id="off-on"></div> -->
     <div class="top panel">
       <!-- the voltmeter -->
       <div class="meter">
@@ -19,11 +19,23 @@
           <img src="spear.svg">
         </div>
       </div>
-      <!-- the measuring screen -->
-      <div id="armature">
-        <div class="out">
-          <div class="in">
-            <div id="arm-display"></div>
+      <!-- the measuring screens -->
+      <div id="middle-displays">
+        <div id="armature">
+          <h3>Ток якоря</h3>
+          <div class="out">
+            <div class="in">
+              <div id="arm-display"></div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div id="angular">
+          <h3>Угловая скорость</h3>
+          <div class="out">
+            <div class="in">
+              <div id="ang-display"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -34,21 +46,12 @@
           <img src="spear.svg">
         </div>
       </div>
-      <!-- the measuring screens -->
-      <div id="right-displays">
-        <div id="angular">
-          <div class="out">
-            <div class="in">
-              <div id="ang-display"></div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div id="torque">
-          <div class="out">
-            <div class="in">
-              <div id="tor-display"></div>
-            </div>
+
+      <div id="torque">
+        <h3>Момент двигателя</h3>
+        <div class="out">
+          <div class="in">
+            <div id="tor-display"></div>
           </div>
         </div>
       </div>
@@ -58,14 +61,15 @@
     <div class="knobs panel">
       <span id="v-control"></span>
       <span id="res-control"></span>
-      <div id="scale">
-        <object data="scale.svg"></object>
-      </div>
-      <span id="a-control"></span>
+        <div id="scale">
+          <object data="scale.svg"></object>
+        </div>
+        <span id="a-control"></span>
       <span id="tor-control"></span>
     </div>
 
     <div class="bottom panel">
+      <h3>Добавочное сопротивление</h3>
       <!-- the power button -->
       <button type="button" class="button"><img src="button.svg"></button>
       <!-- the toggle -->

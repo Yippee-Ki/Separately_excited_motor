@@ -1,7 +1,7 @@
 .button {
-  z-index: 21;  
+  z-index: 21;
   position: relative;
-  margin: 0px 0px 150px 150px;
+  margin: 0px 0px 20px 150px;
   display: inline-block;
   font-weight: bold;
   color: rgb(248, 245, 245);

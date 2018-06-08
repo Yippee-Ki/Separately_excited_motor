@@ -4,10 +4,6 @@
  */
 
 @CHARSET "UTF-8"; /* TODO:  google it, ntk if needed*/
-#armature div { position: relative; bottom: 220px;}
-#right-displays div { position: relative;}
-#angular, #torque { padding: 0;}
-#angular div{ bottom: 120px;}
 .out {
   width:205px;
   height:100px;
@@ -37,12 +33,12 @@
   -moz-box-shadow:inset rgba(0,0,0,0.3) 2px 2px 2px, 2px 2px 2px #FFFFFF;
   -webkit-box-shadow:inset rgba(0,0,0,0.3) 2px 2px 2px, 2px 2px 2px #FFFFFF;
 }
-#arm-display, #tor-display {
+#arm-display {
   top:8px;
   width:150px;
   height:70px;
 }
-#ang-display {
+#ang-display, #tor-display {
   top:8px;
   width:180px;
   height:70px;

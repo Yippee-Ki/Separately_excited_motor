@@ -4,7 +4,7 @@ $(function(){
 
     // реулятор для вольтметра
     $('#v-control').knobKnob({
-        snap : 10,
+        snap : 1,
         value: 1,
         turn : function (ratio) {
          var deg = ratio * 90;
@@ -47,7 +47,7 @@ $(function(){
 
     // реулятор для амперметра
     $('#a-control').knobKnob({
-        snap : 10,
+        snap : 1,
         value: 1,
         turn : function (ratio) {
          var deg = ratio * 90;
@@ -63,12 +63,12 @@ $(function(){
 
     // регулятор момента сопротивления
     $('#tor-control').knobKnob({
-        snap : 10,
+        snap : 1,
         value: 1,
         turn : function (ratio) {
-          torque = (ratio * 20).toFixed(1);
+          torque = (ratio * 40 - 20).toFixed(1);
           new JSGadget.Display("#tor-display", {
-            digits: 3,
+            digits: 4,
             color: "white",
             shadow: {color: "gray"}},
             torque);
