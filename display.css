@@ -33,12 +33,7 @@
   -moz-box-shadow:inset rgba(0,0,0,0.3) 2px 2px 2px, 2px 2px 2px #FFFFFF;
   -webkit-box-shadow:inset rgba(0,0,0,0.3) 2px 2px 2px, 2px 2px 2px #FFFFFF;
 }
-#arm-display {
-  top:8px;
-  width:150px;
-  height:70px;
-}
-#ang-display, #tor-display {
+#arm-display, #ang-display, #tor-display {
   top:8px;
   width:180px;
   height:70px;
