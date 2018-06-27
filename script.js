@@ -10,9 +10,11 @@ $(function(){
          var deg = ratio * 90;
          $('#v-spear').css('transform', 'rotate(' + (deg - 45) + 'deg)'); // поворачивает стрелку вольтметра
 
-         voltage = (ratio * 250).toFixed(1); // устанавливает значение напряжения
+         voltage = (ratio * 25).toFixed(1); // устанавливает значение напряжения
          if (voltage == 0)
            voltage = 0.1;
+          //
+          // voltage = voltage * 10;
            counting();
          }
     });
@@ -78,18 +80,18 @@ $(function(){
         }
     });
 
-
     function counting(){
 
       excitation_flux = excitation_current * 2;
-
+console.log(voltage);
       var armature = torque / excitation_flux;
       new JSGadget.Display("#arm-display", {
         digits: 4,
         color: "white",
         shadow: {color: "gray"}},
         armature.toFixed(1));
-      var angular = voltage / excitation_flux - (resistance + 2) / (excitation_flux * excitation_flux) * torque;
+      var angular = voltage * 10 / excitation_flux - (resistance + 2) /
+          (excitation_flux * excitation_flux) * torque;
       if ((angular < -99.99) || (angular > 999.99)) {
         new JSGadget.Display("#ang-display", {
           digits: 5,
