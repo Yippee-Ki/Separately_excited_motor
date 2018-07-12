@@ -13,8 +13,6 @@ $(function(){
          voltage = (ratio * 25).toFixed(1); // устанавливает значение напряжения
          if (voltage == 0)
            voltage = 0.1;
-          //
-          // voltage = voltage * 10;
            counting();
          }
     });
@@ -82,16 +80,17 @@ $(function(){
 
     function counting(){
 
-      excitation_flux = excitation_current * 2;
-console.log(voltage);
+      var excitation_flux = excitation_current * 2;
       var armature = torque / excitation_flux;
+      var angular = ((voltage * 10) / excitation_flux) - ((parseInt(resistance) + 2) * torque /
+          (excitation_flux * excitation_flux));
+
       new JSGadget.Display("#arm-display", {
         digits: 4,
         color: "white",
         shadow: {color: "gray"}},
         armature.toFixed(1));
-      var angular = voltage * 10 / excitation_flux - (resistance + 2) /
-          (excitation_flux * excitation_flux) * torque;
+
       if ((angular < -99.99) || (angular > 999.99)) {
         new JSGadget.Display("#ang-display", {
           digits: 5,
