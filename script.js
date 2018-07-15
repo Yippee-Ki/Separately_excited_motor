@@ -81,6 +81,21 @@ $(function(){
     function counting(){
 
       var excitation_flux = excitation_current * 2;
+
+      console.log(" ");
+      console.log("Ток возбуждения: " + excitation_current);
+      console.log("Поток возбуждения: " + excitation_flux);
+      console.log("Момент двигателя: " + torque);
+      console.log("Напряжение: " + (voltage * 10));
+      console.log("Добавочное сопротивление: " + resistance);
+
+      console.log("Добавочное сопротивление + 2:" + parseInt(resistance) + 2);
+      console.log("Поток возбуждения * поток возбуждения: " + (excitation_flux * excitation_flux));
+      console.log("Напряжение / поток возбуждения: " + (voltage * 10) / excitation_flux);
+      console.log("Добавочное сопротивление + 2 * момент двигателя / (поток возбуждения * поток возбуждения)): "
+          + ((parseInt(resistance) + 2) * torque /
+          (excitation_flux * excitation_flux)));
+
       var armature = torque / excitation_flux;
       var angular = ((voltage * 10) / excitation_flux) - ((parseInt(resistance) + 2) * torque /
           (excitation_flux * excitation_flux));
